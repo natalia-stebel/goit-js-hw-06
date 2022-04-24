@@ -27,4 +27,4 @@ const addNewImg = images.map(image => {
 });
 galleryList.insertAdjacentHTML("beforeend", addNewImg);
 
-addNewImg(images);
+addNewImg(...images);
