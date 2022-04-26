@@ -27,4 +27,4 @@ galleryList.style.justifyContent = "space-evenly";
 });
 galleryList.insertAdjacentHTML("beforeend", addNewImg);
 
-addNewImg(...images);
+// addNewImg(...images);
