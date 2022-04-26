@@ -20,7 +20,7 @@ galleryList.style.display = "flex";
 galleryList.style.justifyContent = "space-evenly";
 
 
-const addNewImg = images.map(image => {
+ const addNewImg = images.map(image => {
   const addNewImgEl = `<li><img src="${image.url}" alt="${image.alt}" heihgt="450" width="450"</li>`;
   return addNewImgEl;
   
