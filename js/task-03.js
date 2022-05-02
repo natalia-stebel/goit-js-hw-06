@@ -20,11 +20,9 @@ galleryList.style.display = "flex";
 galleryList.style.justifyContent = "space-evenly";
 
 
- const addNewImg = images.map(image => {
-  const addNewImgEl = `<li><img src="${image.url}" alt="${image.alt}" heihgt="450" width="450"</li>`;
-  return addNewImgEl;
-  
-});
-galleryList.insertAdjacentHTML("beforeend", addNewImg);
 
-// addNewImg(...images);
+ const addNewImg = images.map(({url,alt}) => {
+ return`<li><img src="${url}" alt="${alt}" heihgt="450" width="450"</li>`;
+});
+galleryList.insertAdjacentHTML("afterbegin", addNewImg.join(''));
+
